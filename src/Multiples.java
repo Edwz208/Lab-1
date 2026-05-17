@@ -1,9 +1,14 @@
-void main() {
-    int count = 0;
-    for (int i = 1; i < 1000; i++) {
-        if (i % 3 == 0 || i % 5 == 0) {
-            count++;
+public class Multiples {
+    public static int main(int limit, int a, int b) {
+        int count = 0;
+        for (int i = 1; i < limit; i++) {
+            if (i % a == 0 || i % b == 0) {
+                count++;
+            }
         }
+        return count;
     }
-    System.out.println(count);
+    public static int main() {
+        return main(1000, 3, 5);
+    }
 }

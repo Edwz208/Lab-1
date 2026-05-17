@@ -1,14 +1,15 @@
-void main() {
-    int value = 100;
-    int steps = 0;
-    while (value != 0) {
-        if (value % 2 == 0) {
-            value = value / 2;
+public class Reduce {
+    public static int main(int n) {
+        int steps = 0;
+        while (n != 0) {
+            if (n % 2 == 0) {
+                n = n /2;
+            }
+            else {
+                n = n - 1;
+            }
+            steps++;
         }
-        else {
-            value = value - 1;
-        }
-        steps++;
+        return steps;
     }
-    System.out.println(steps);
 }
